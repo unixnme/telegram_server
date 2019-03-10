@@ -1,7 +1,7 @@
 # telegram_server
 
 ## Install
-python setup.py install
+> $ python setup.py install
 
 ## Tutorial
 ### 1. Run the server

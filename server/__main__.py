@@ -16,7 +16,8 @@ def start_server():
     handler.bot = bot
     handler.chat_id = args.id
 
-    with socketserver.TCPServer((args.host, args.port), handler) as server:
-        server.serve_forever()
+    server = socketserver.TCPServer((args.host, args.port), handler)
+    server.serve_forever()
+    server.shutdown()
 
 start_server()
